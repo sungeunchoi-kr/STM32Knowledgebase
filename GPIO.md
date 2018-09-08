@@ -1,6 +1,6 @@
 # GPIO
 
-#### 1. 원하는 핀을 클릭해서 “GPIO_Output”을 선택.
+#### 1. STM32 Cube MX 프로젝트에서 원하는 핀을 클릭한 후 “GPIO_Output”을 선택.
 
 ![](images/gpio-010.PNG)
 
