@@ -43,3 +43,6 @@ MCU Clock: 8MHz; Prescaler = 8; Auto Reload Register = 1000; Compare Regsiter = 
 1000에 도달하면 0으로 재설정되고 PWM 출력이 다시 HIGH가 된다. 1번의 PWM duty cycle이 완성되었다.
 
 듀티 비<sup>Duty Ratio</sup>는 10%이며 듀티 사이클 주파수<sup>Duty Cycle Frequency</sup>는 1000Hz 다.
+
+Compare Register가 0일 때는 0% 듀티 비이며 1000일때는 Auto Reload Register와 같아지기 때문에 100% 듀티 비 이다.
+따라서 Compare Register의 범위<sup>range</sup>는 0 ~ 1000이다. 따라서 PWM 해상도<sup>PWM Resolution</sup> 역시 1000 이다. 
