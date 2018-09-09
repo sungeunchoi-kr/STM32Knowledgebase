@@ -32,7 +32,7 @@ Configuration 탭에 "DMA" 버튼을 누르면 DMA 상세 설정 창이 뜬다.
 increment할 지 설정한다.
 
 #### 4. 코드
-````
+```c
 /* main.c */
 #define NUMBER_OF_ADC_CHANNELS   3
 uint32_t adc_buffer[NUMBER_OF_ADC_CHANNELS];
