@@ -48,7 +48,7 @@ Compare Register가 0일 때는 0% 듀티 비이며 1000일때는 Auto Reload Re
 따라서 Compare Register의 범위<sup>range</sup>는 0 ~ 1000이다. 따라서 PWM 해상도<sup>PWM Resolution</sup> 역시 1000 이다. 
 
 #### 6. 코드
-````
+```c
 int main(void) {
     ...
     HAL_TIM_Base_Start(&htim1);
