@@ -52,7 +52,7 @@ Compare Register가 0일 때는 0% 듀티 비이며 1000일때는 Auto Reload Re
 int main(void) {
     ...
     HAL_TIM_Base_Start(&htim1);
-    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4); 
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2); 
 
     /* The macro __HAL_TIM_SET_COMPARE() sets the PWM duty ratio.
        PWM ratio = n / period
@@ -61,7 +61,7 @@ int main(void) {
    
        `__HAL_TIM_SET_COMPARE` directly modifies the TIMx_CCRx register.
     */
-    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_4, 100);
+    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2, 100);
     ...
 }
 ````
