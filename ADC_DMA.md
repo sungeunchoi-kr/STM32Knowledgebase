@@ -13,12 +13,12 @@ Configuration 탭에 "ADC" 버튼을 누르면 ADC 상세 설정 창이 뜬다.
 
 아래 이미지 처럼 설정한다. 중요하면서 자명하지 않은 필드는 하이라이트 해 두었다.
 
-![](images/adc-dma-030.PNG)
+![](images/adc-dma-030.png)
 
 #### 3. DMA 설정
 Configuration 탭에 "DMA" 버튼을 누르면 DMA 상세 설정 창이 뜬다.
 
-![](images/adc-dma-040.PNG)
+![](images/adc-dma-040.png)
 
 [1] "Add" 버튼을 누른 후 위의 창처럼 DMA Request, Channel, Direction, 그리고 Priority 필드를 설정한다.
 
