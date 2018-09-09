@@ -46,3 +46,22 @@ MCU Clock: 8MHz; Prescaler = 8; Auto Reload Register = 1000; Compare Regsiter = 
 
 Compare Register가 0일 때는 0% 듀티 비이며 1000일때는 Auto Reload Register와 같아지기 때문에 100% 듀티 비 이다.
 따라서 Compare Register의 범위<sup>range</sup>는 0 ~ 1000이다. 따라서 PWM 해상도<sup>PWM Resolution</sup> 역시 1000 이다. 
+
+#### 6. 코드
+````
+int main(void) {
+    ...
+    HAL_TIM_Base_Start(&htim1);
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4); 
+
+    /* The macro __HAL_TIM_SET_COMPARE() sets the PWM duty ratio.
+       PWM ratio = n / period
+          where 'period' is the value of `htim1.Init.Period` and
+          `n` is the 3rd parameter of __HAL_TIM_SET_COMPARE().
+   
+       `__HAL_TIM_SET_COMPARE` directly modifies the TIMx_CCRx register.
+    */
+    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_4, 100);
+    ...
+}
+````
