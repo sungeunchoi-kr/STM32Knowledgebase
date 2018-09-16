@@ -16,3 +16,7 @@ Configuration 탭의 `TIM1` 버튼을 누르면 `TIM1 Configuration` 창이 뜬�
 마지막으로, 인터럽트를 활성화 시킨다. (`TIM1 break, update, trigger, and communication interrupts` 체크박스를 체크한다.)
 
 ![](images/timerint-030.png)
+
+생성된 코드
+
+![](images/timerint-040.png)
